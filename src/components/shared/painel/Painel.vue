@@ -2,7 +2,7 @@
   <div class="painel">
     <h2 @dblclick="visivel = !visivel" class="painel-titulo">{{ titulo }}</h2>
     <transition name="painel-fade">
-      <div @dblclick="visivel = !visivel" class="painel-conteudo" v-show="visivel" >
+      <div class="painel-conteudo" v-show="visivel" >
         <slot></slot>
       </div>
     </transition>
